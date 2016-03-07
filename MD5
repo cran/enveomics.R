@@ -1,13 +1,13 @@
-46fb69c8e52258e6109309b05c20434c *DESCRIPTION
+fabc6b5fccf7f5ac0b9375747fc5b94f *DESCRIPTION
 66f91dfb35055fb8ad49382eff6c3fc4 *NAMESPACE
 ab0d991e266be5be1016b48283f56b0f *R/autoprune.R
 805623f9674d75aa54c713da7b17892d *R/barplot.R
 688e0003ea72c60415191ee1d0f03ab8 *R/cliopts.R
 306b9c1dd31dfbf1b68340fffea19ac3 *R/df2dist.R
 998980b8ee84099390b346622b07f55d *R/recplot.R
-32926a19cb809e82488e28d5644b98fe *R/recplot2.R
+8c3ac02c9cf610319021647977b8c96d *R/recplot2.R
 1781c633067b381585d54d91e6ce97d3 *R/tribs.R
-aff7e6f960798b83ef05806b005ecd63 *README.md
+71115aa421ef1b1bad094d1df57e67fd *README.md
 1eee9fc769a48cd3e1ba6cfd7c330856 *data/phyla.counts.rda
 36a1ffff5fee9416f568f448190d55ba *man/enve.RecPlot2-class.Rd
 b877714a6938ca0aae2edf4d5d7dbd60 *man/enve.RecPlot2.Peak-class.Rd
@@ -24,8 +24,8 @@ e18b315b234443b515f640dc7818265e *man/enve.df2dist.group.Rd
 9663be7880a548394889dfe3f4ea123f *man/enve.df2dist.list.Rd
 bca6de14e1432dd2d7e424ef26a95fdc *man/enve.prune.dist.Rd
 e8ba00f6dbe1c06a60ab3c44f4edf38a *man/enve.recplot.Rd
-7361f37c652ded45a6a199a5abebabfe *man/enve.recplot2.Rd
-24a383f5498660db5ad883f05b9d7820 *man/enve.recplot2.__counts.Rd
+42c59e41d56da2bb378d6b01dddf4cee *man/enve.recplot2.Rd
+16fef3b1f22d010b9a43af0a93f687bd *man/enve.recplot2.__counts.Rd
 e55c0238a64b3c3b72d6a328a4be10b2 *man/enve.recplot2.__findPeak.Rd
 a80e83e9d4cefeeb62d0e1de67fb30a1 *man/enve.recplot2.__findPeaks.Rd
 20ec84b0e253cd66ac1c1229f44208fd *man/enve.recplot2.__peakHist.Rd
@@ -36,7 +36,7 @@ e71544da3f4d62ce76c87809c1827a8b *man/enve.recplot2.__whichClosestPeak.Rd
 12e6b49094bd9f27398f873204866939 *man/enve.tribs.test.Rd
 5b76a37a1dbdb8a0d0b9189b217eff4d *man/enveomics.R-package.Rd
 2a6fb4d08edb0feb5d7a6ca7dbc34992 *man/phyla.counts.Rd
-0eace269a01c1084fa4c3bc5ae5c85ff *man/plot.enve.RecPlot2.Rd
+3a85bfef5e98029aa4d8cb2c6b9d8a2f *man/plot.enve.RecPlot2.Rd
 2e2c1de426d958568c5951e3cfb73991 *man/plot.enve.TRIBS.Rd
 f94af0c3fd2735e60dd352b43af6c76a *man/plot.enve.TRIBStest.Rd
 54388e997719db5375657468a4a2d896 *man/summary.enve.TRIBS.Rd

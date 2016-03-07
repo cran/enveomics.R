@@ -101,6 +101,8 @@ plot.enve.RecPlot2 <- function
       ### Color associated to out-group matches.
       id.col='black',
       ### Color for the identity histogram.
+      breaks.col='#AAAAAA40',
+      ### Color of the vertical lines indicating sequence breaks.
       peaks.opts=list(),
       ### Options passed to `enve.recplot2.findPeaks`, if `peaks.col` is not NA.
       ...
@@ -149,7 +151,7 @@ plot.enve.RecPlot2 <- function
 	 rect(pos.lim[1], id.lim[1], pos.lim[2], min(id.breaks[c(id.ingroup,TRUE)]), col=out.bg, border=NA);
 	 rect(pos.lim[1], min(id.breaks[c(id.ingroup,TRUE)]), pos.lim[2], id.lim[2], col=in.bg,  border=NA);
       }
-      abline(v=x$seq.breaks/pos.factor, col=grey(2/3, alpha=1/4));
+      abline(v=x$seq.breaks/pos.factor, col=breaks.col);
       image(x=pos.breaks, y=id.breaks, z=log10(counts),col=palette, bg=grey(1,0),
 	 breaks=seq(-.1,log10(max(counts)), length.out=1+length(palette)), add=TRUE);
    }
@@ -167,7 +169,7 @@ plot.enve.RecPlot2 <- function
       plot(1,t='n', bty='l', log='y',
 	 xlim=pos.lim, xlab=xlab, xaxt=xaxt, xaxs='i',
 	 ylim=seqdepth.lim, yaxs='i', ylab='Sequencing depth (X)');
-      abline(v=x$seq.breaks/pos.factor, col=grey(2/3, alpha=1/4));
+      abline(v=x$seq.breaks/pos.factor, col=breaks.col)
       pos.x <- rep(pos.breaks,each=2)[-c(1,2*length(pos.breaks))]
       pos.f <- rep(seqdepth.in,each=2)
       lines(pos.x, rep(seqdepth.out,each=2), lwd=out.lwd, col=out.col);
@@ -286,7 +288,9 @@ enve.recplot2 <- function(
       ### Should the object be plotted?
       pos.breaks=1e3,
       ### Breaks in the positions histogram. It can also be a vector of break
-      ### points, and values outside the range are ignored.
+      ### points, and values outside the range are ignored. If zero (0), it
+      ### uses the sequence breaks as defined in the .lim file, which means
+      ### one bin per contig (or gene, if the mapping is agains genes).
       id.breaks=300,
       ### Breaks in the identity histogram. It can also be a vector of break
       ### points, and values outside the range are ignored.
@@ -313,22 +317,40 @@ enve.recplot2 <- function(
    
    #Read files
    if(verbose) cat("Reading files.\n")
-   rec <- read.table(paste(prefix, '.rec', sep=''), sep="\t", comment.char='', quote='');
-   lim <- read.table(paste(prefix, '.lim', sep=''), sep="\t", comment.char='', quote='', as.is=TRUE);
+   rec <- read.table(paste(prefix, ".rec", sep=""), sep="\t", comment.char="",
+      quote="");
+   lim <- read.table(paste(prefix, ".lim", sep=""), sep="\t", comment.char="",
+      quote="", as.is=TRUE);
    
    # Build matrix
    if(verbose) cat("Building counts matrix.\n")
-   if(id.metric=='corrected identity' & ncol(rec)<6) stop("Requesting corrected identity, but .rec file doesn't have 6th column");
-   rec.idcol <- ifelse(id.metric=='identity', 3, ifelse(id.metric=='corrected identity', 6, 4));
-   if(length(pos.breaks)==1) pos.breaks <- seq(min(lim[,2]),         max(lim[,3]),         length.out=pos.breaks+1);
-   if(length(id.breaks)==1)  id.breaks  <- seq(min(rec[,rec.idcol]), max(rec[,rec.idcol]), length.out=id.breaks+1);
+   if(id.metric=="corrected identity" & ncol(rec)<6){
+      stop("Requesting corrected identity, but .rec file doesn't have 6th column")
+   }
+   rec.idcol <- ifelse(id.metric=="identity", 3, ifelse(id.metric=="corrected identity", 6, 4));
+   if(length(pos.breaks)==1){
+      if(pos.breaks>0){
+         pos.breaks <- seq(min(lim[,2]), max(lim[,3]), length.out=pos.breaks+1);
+      }else{
+         pos.breaks <- c(lim[,2], tail(lim[,3], n=1))
+      }
+   }
+   if(length(id.breaks)==1){
+      id.breaks <- seq(min(rec[,rec.idcol]), max(rec[,rec.idcol]),
+	 length.out=id.breaks+1);
+   }
    
    # Run in parallel
    cl		<- makeCluster(threads)
    rec.l	<- list()
    thl		<- ceiling(nrow(rec)/threads)
-   for(i in 0:(threads-1)) rec.l[[i+1]] <- list(rec=rec[ (i*thl+1):min(((i+1)*thl),nrow(rec)), ], verbose=ifelse(i==0, verbose, FALSE))
-   counts.l	<- clusterApply(cl, rec.l, enve.recplot2.__counts, pos.breaks=pos.breaks, id.breaks=id.breaks, rec.idcol=rec.idcol)
+   for(i in 0:(threads-1)){
+      rec.l[[i+1]] <- list(rec=rec[ (i*thl+1):min(((i+1)*thl),nrow(rec)), ],
+			verbose=ifelse(i==0, verbose, FALSE))
+   }
+   counts.l	<- clusterApply(cl, rec.l, enve.recplot2.__counts,
+			pos.breaks=pos.breaks, id.breaks=id.breaks,
+			rec.idcol=rec.idcol)
    counts	<- counts.l[[1]]
    if(threads>1) for(i in 2:threads) counts <- counts + counts.l[[i]]
    stopCluster(cl)
@@ -471,7 +493,7 @@ enve.recplot2.corePeak <- function
 
 
 enve.recplot2.__counts <- function
-   ### Internal ancilliary function (see `enve.RecPlot2.Peak`).
+   ### Internal ancilliary function (see `enve.recplot2`).
       (x, pos.breaks, id.breaks, rec.idcol){
    rec <- x$rec
    verbose <- x$verbose

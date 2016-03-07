@@ -1,5 +1,5 @@
 Package: enveomics.R
-Version: 1.0.0
+Version: 1.0.1
 Authors@R: c(person("Luis M.","Rodriguez-R",role=c("aut","cre"),
 	   email="lmrodriguezr@gmail.com"))
 Title: Various R Functions from the Kostas Lab
@@ -16,4 +16,4 @@ LazyLoad: yes
 Encoding: UTF-8
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2016-01-12 14:18:59
+Date/Publication: 2016-03-07 01:09:09
