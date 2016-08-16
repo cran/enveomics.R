@@ -1,14 +1,14 @@
-c763863d5579aa93adf7cc9a080317cf *DESCRIPTION
-9e1d79bee3503dc467f4f061e36f0af7 *NAMESPACE
+80f066bb3c69f3a8c8c4d07b5d28ac2b *DESCRIPTION
+f71b5cadbf0bee6c0a5b0fdaa7ac75fc *NAMESPACE
 ab0d991e266be5be1016b48283f56b0f *R/autoprune.R
 805623f9674d75aa54c713da7b17892d *R/barplot.R
 688e0003ea72c60415191ee1d0f03ab8 *R/cliopts.R
 306b9c1dd31dfbf1b68340fffea19ac3 *R/df2dist.R
 e4c8196248ded4bf30412da3058f9e50 *R/growthcurve.R
 998980b8ee84099390b346622b07f55d *R/recplot.R
-1af1790b91ca8e9af45f73be5d7bb140 *R/recplot2.R
+b5a4c24d872456c582362d4ca3c33598 *R/recplot2.R
 1781c633067b381585d54d91e6ce97d3 *R/tribs.R
-4f05387305d01f54e886e91aa75c874e *README.md
+bbe505d2f5c09e384884d49f5a519d45 *README.md
 706aa7f24959213f3130ad8f6a4a5cf9 *data/growth.curves.rda
 1eee9fc769a48cd3e1ba6cfd7c330856 *data/phyla.counts.rda
 4e462563c6d6342d662b2cd8323ae6b9 *man/enve.GrowthCurve-class.Rd
@@ -37,6 +37,7 @@ a80e83e9d4cefeeb62d0e1de67fb30a1 *man/enve.recplot2.__findPeaks.Rd
 e71544da3f4d62ce76c87809c1827a8b *man/enve.recplot2.__whichClosestPeak.Rd
 e913d423b777ed379dbb27433b09468f *man/enve.recplot2.changeCutoff.Rd
 905a2c6309147a600077279489c0dcba *man/enve.recplot2.corePeak.Rd
+62ab96e9ccc12d68573120540263af99 *man/enve.recplot2.extractWindows.Rd
 781fabcd00a971ed9e761ce5bccf1ba4 *man/enve.recplot2.findPeaks.Rd
 04e63736a92ba5ef58fba216bc7ef5bd *man/enve.tribs.Rd
 12e6b49094bd9f27398f873204866939 *man/enve.tribs.test.Rd
