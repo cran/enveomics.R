@@ -1,7 +1,7 @@
-de99e478c71ed1ca2f8f304fa916360b *DESCRIPTION
-f8ce7d6409749a4f08a3efbb4e506b46 *NAMESPACE
+e74f8bc42e55b860203a04e78af6b0f6 *DESCRIPTION
+bf1e8faffbf80f6f92bb6dc5482022c0 *NAMESPACE
 ab0d991e266be5be1016b48283f56b0f *R/autoprune.R
-805623f9674d75aa54c713da7b17892d *R/barplot.R
+1ea7fcf8b22b5274cdfd27cec340247f *R/barplot.R
 688e0003ea72c60415191ee1d0f03ab8 *R/cliopts.R
 1cdda21f91fd58cef74686b5ad402412 *R/df2dist.R
 e4c8196248ded4bf30412da3058f9e50 *R/growthcurve.R
@@ -21,7 +21,7 @@ e91c58a14edcc099aaa2f93c1fa69f3b *man/enve.TRIBS.merge.Rd
 20c70abb183764e1105526c154f91912 *man/enve.__prune.iter.Rd
 8fb8897ecbd8dac5363726ab4be9c916 *man/enve.__prune.reduce.Rd
 1a0b42d87e4419674b7ac748bea25c6f *man/enve.__tribs.Rd
-5e2cde7a14ee312712800501b308b6d3 *man/enve.barplot.Rd
+3374016aefdee4adc88867ab57e1a531 *man/enve.barplot.Rd
 360038616e0f3e2e284447af7f5d84a7 *man/enve.cliopts.Rd
 624c5ce14922150bb65eb7b4c95a2813 *man/enve.col.alpha.Rd
 a09c7e8baa19eb0b2b5db80396fd070a *man/enve.col2alpha.Rd
@@ -43,7 +43,7 @@ e913d423b777ed379dbb27433b09468f *man/enve.recplot2.changeCutoff.Rd
 781fabcd00a971ed9e761ce5bccf1ba4 *man/enve.recplot2.findPeaks.Rd
 04e63736a92ba5ef58fba216bc7ef5bd *man/enve.tribs.Rd
 12e6b49094bd9f27398f873204866939 *man/enve.tribs.test.Rd
-5b76a37a1dbdb8a0d0b9189b217eff4d *man/enveomics.R-package.Rd
+9d2a248f1dad254f301da4e5a7433cc5 *man/enveomics.R-package.Rd
 151c3736532248b2b53928885f1f6bf5 *man/growth.curves.Rd
 2a6fb4d08edb0feb5d7a6ca7dbc34992 *man/phyla.counts.Rd
 c769deac8840ebb126aad7789276633a *man/plot.enve.GrowthCurve.Rd
