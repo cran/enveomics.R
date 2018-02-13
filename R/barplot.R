@@ -65,15 +65,13 @@ enve.barplot <- structure(function(
   if(top > nrow(p)) top = nrow(p)
 
   # Sort
-  ord <- NULL
   if(is.null(order[1])){
-    ord <- order(apply(p, 1, sort.by))
+    p <- p[order(apply(p, 1, sort.by)), ]
   }else if(is.na(order[1])){
-    ord <- 1:nrow(p)
+      
   }else{
-    ord <- order
+    p <- p[order, ]
   }
-  p <- p[ord, ]
   if(organic.trend) add.trend=TRUE
    
   # Colors
@@ -153,9 +151,6 @@ enve.barplot <- structure(function(
   legend('center', col=c(color.col, other.col), legend=nam, pch=15, bty='n',
     pt.cex=2, ncol=legend.ncol)
   par(mar=mar)
-
-  ### Returns (invisibly) the order of the elements.
-  invisible(ord)
 }, ex=function(){
   # Load data
   data("phyla.counts", package="enveomics.R", envir=environment())
