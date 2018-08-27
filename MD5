@@ -1,15 +1,15 @@
-b417be9eb028d0a9dfdc19a085ad737f *DESCRIPTION
-b64013c873b0a572041b0ff9b00330b8 *NAMESPACE
+d28a14308c29422cd0ebdb6211acabee *DESCRIPTION
+f35f4caf99cf51fa83543b3d9a9d49ec *NAMESPACE
 ab0d991e266be5be1016b48283f56b0f *R/autoprune.R
 8a5fa8678d9e74dc224d1821ae860aec *R/barplot.R
 688e0003ea72c60415191ee1d0f03ab8 *R/cliopts.R
 1cdda21f91fd58cef74686b5ad402412 *R/df2dist.R
 e4c8196248ded4bf30412da3058f9e50 *R/growthcurve.R
 998980b8ee84099390b346622b07f55d *R/recplot.R
-21ee119c11d75fb71b09e3d3fa4fbf7c *R/recplot2.R
+a3a534149eb432a6f3228685b3c51b2f *R/recplot2.R
 1781c633067b381585d54d91e6ce97d3 *R/tribs.R
 6444c301c7c2e8fb28dd6043403768df *R/utils.R
-926f4669d3527fac2727c76a47c8f176 *README.md
+64a2e26be2a47625819d1520a399833c *README.md
 706aa7f24959213f3130ad8f6a4a5cf9 *data/growth.curves.rda
 1eee9fc769a48cd3e1ba6cfd7c330856 *data/phyla.counts.rda
 4e462563c6d6342d662b2cd8323ae6b9 *man/enve.GrowthCurve-class.Rd
@@ -40,7 +40,7 @@ e913d423b777ed379dbb27433b09468f *man/enve.recplot2.changeCutoff.Rd
 b34fd1cfee7ccc828b189144cd5d5161 *man/enve.recplot2.compareIdentities.Rd
 7d818de166232b2d6ff720b9e8d3cf48 *man/enve.recplot2.coordinates.Rd
 905a2c6309147a600077279489c0dcba *man/enve.recplot2.corePeak.Rd
-8169a43c4df17ed5a534c62d202fdca9 *man/enve.recplot2.extractWindows.Rd
+7e99d803441cd802d36f20268b4d3e8c *man/enve.recplot2.extractWindows.Rd
 84df1bdbbe3a9aa285b9969a17ae38b5 *man/enve.recplot2.findPeaks.Rd
 e2cf97ac0d21b8d2566ec34d11e9804a *man/enve.recplot2.findPeaks.__em_e.Rd
 ed40d9e7d391b51b6c1b6e926d2de452 *man/enve.recplot2.findPeaks.__em_m.Rd
@@ -51,6 +51,7 @@ a0f216ccc098a496536d3491641057e1 *man/enve.recplot2.findPeaks.__mow_one.Rd
 bd063b3ea5851d644991250dcdc8f042 *man/enve.recplot2.findPeaks.emauto.Rd
 c50f7bcbbcbd3b7f43aee93f45c847cd *man/enve.recplot2.findPeaks.mower.Rd
 c5192ecc4d88475e904edc05eb2fc3d5 *man/enve.recplot2.seqdepth.Rd
+9b37e672958853b0bf27a038a866fde8 *man/enve.recplot2.windowDepthThreshold.Rd
 04e63736a92ba5ef58fba216bc7ef5bd *man/enve.tribs.Rd
 12e6b49094bd9f27398f873204866939 *man/enve.tribs.test.Rd
 59a0b32057e8d86f72fbd2b76a5b107f *man/enve.truncate.Rd
