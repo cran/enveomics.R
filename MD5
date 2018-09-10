@@ -1,4 +1,4 @@
-d28a14308c29422cd0ebdb6211acabee *DESCRIPTION
+1c01d61f6ea10afcf9f91d60837b66eb *DESCRIPTION
 f35f4caf99cf51fa83543b3d9a9d49ec *NAMESPACE
 ab0d991e266be5be1016b48283f56b0f *R/autoprune.R
 8a5fa8678d9e74dc224d1821ae860aec *R/barplot.R
@@ -6,14 +6,14 @@ ab0d991e266be5be1016b48283f56b0f *R/autoprune.R
 1cdda21f91fd58cef74686b5ad402412 *R/df2dist.R
 e4c8196248ded4bf30412da3058f9e50 *R/growthcurve.R
 998980b8ee84099390b346622b07f55d *R/recplot.R
-a3a534149eb432a6f3228685b3c51b2f *R/recplot2.R
+c9c5c018a825c63c78fc701830601053 *R/recplot2.R
 1781c633067b381585d54d91e6ce97d3 *R/tribs.R
 6444c301c7c2e8fb28dd6043403768df *R/utils.R
-64a2e26be2a47625819d1520a399833c *README.md
+33607ba9b516385069563bbd58df1548 *README.md
 706aa7f24959213f3130ad8f6a4a5cf9 *data/growth.curves.rda
 1eee9fc769a48cd3e1ba6cfd7c330856 *data/phyla.counts.rda
 4e462563c6d6342d662b2cd8323ae6b9 *man/enve.GrowthCurve-class.Rd
-4334b22063b259536b744426fbc0f5e8 *man/enve.RecPlot2-class.Rd
+686d8dc4547ec6ec9a55a951e25843db *man/enve.RecPlot2-class.Rd
 ef3b052269bdb6fd6729fae101809a2c *man/enve.RecPlot2.Peak-class.Rd
 fe86e1502ef75d99125ba957729b9a33 *man/enve.TRIBS-class.Rd
 e91c58a14edcc099aaa2f93c1fa69f3b *man/enve.TRIBS.merge.Rd
@@ -32,7 +32,7 @@ ce015d2ae4ff4f69a74484de8f418cb2 *man/enve.growthcurve.Rd
 bca6de14e1432dd2d7e424ef26a95fdc *man/enve.prune.dist.Rd
 e8ba00f6dbe1c06a60ab3c44f4edf38a *man/enve.recplot.Rd
 44641be76dc86ad493465169bb9205ae *man/enve.recplot2.ANIr.Rd
-03bc30676bb41c38e3ccb66c96ce13de *man/enve.recplot2.Rd
+072cef81119d63d2920100518042df70 *man/enve.recplot2.Rd
 16fef3b1f22d010b9a43af0a93f687bd *man/enve.recplot2.__counts.Rd
 20ec84b0e253cd66ac1c1229f44208fd *man/enve.recplot2.__peakHist.Rd
 e71544da3f4d62ce76c87809c1827a8b *man/enve.recplot2.__whichClosestPeak.Rd
@@ -40,7 +40,7 @@ e913d423b777ed379dbb27433b09468f *man/enve.recplot2.changeCutoff.Rd
 b34fd1cfee7ccc828b189144cd5d5161 *man/enve.recplot2.compareIdentities.Rd
 7d818de166232b2d6ff720b9e8d3cf48 *man/enve.recplot2.coordinates.Rd
 905a2c6309147a600077279489c0dcba *man/enve.recplot2.corePeak.Rd
-7e99d803441cd802d36f20268b4d3e8c *man/enve.recplot2.extractWindows.Rd
+6248fa77867af3d5257c44138abd2e0d *man/enve.recplot2.extractWindows.Rd
 84df1bdbbe3a9aa285b9969a17ae38b5 *man/enve.recplot2.findPeaks.Rd
 e2cf97ac0d21b8d2566ec34d11e9804a *man/enve.recplot2.findPeaks.__em_e.Rd
 ed40d9e7d391b51b6c1b6e926d2de452 *man/enve.recplot2.findPeaks.__em_m.Rd

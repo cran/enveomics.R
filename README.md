@@ -52,6 +52,9 @@ For additional information on recruitment plots, see the
 [Recruitment plots working document](https://github.com/lmrodriguezr/enveomics/blob/master/Docs/recplot2.md).
 
 ## Changelog
+* 1.4.0: New option `pos.breaks.tsv` for `enve.recplot2`.
+* 1.3.4: Gracefully handles and plots recruitment plots with insufficient data
+  to find peaks.
 * 1.3.3: New function `enve.recplot2.windowDepthThreshold`.
 * 1.3.2: New option `panel.fun` for `plot.enve.RecPlot2`.
 * 1.3.1: New function enve.truncate.
