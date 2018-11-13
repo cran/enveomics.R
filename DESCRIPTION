@@ -1,5 +1,5 @@
 Package: enveomics.R
-Version: 1.4.1
+Version: 1.4.2
 Authors@R: c(person("Luis M.","Rodriguez-R",role=c("aut","cre"),
 	   email="lmrodriguezr@gmail.com"))
 Title: Various Utilities for Microbial Genomics and Metagenomics
@@ -17,6 +17,6 @@ License: Artistic-2.0
 LazyLoad: yes
 Encoding: UTF-8
 NeedsCompilation: no
-Packaged: 2018-09-10 19:19:32 UTC; lmr3
+Packaged: 2018-11-13 05:23:14 UTC; lmr3
 Repository: CRAN
-Date/Publication: 2018-09-10 22:30:06 UTC
+Date/Publication: 2018-11-13 05:50:03 UTC

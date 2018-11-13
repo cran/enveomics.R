@@ -1,4 +1,4 @@
-1c01d61f6ea10afcf9f91d60837b66eb *DESCRIPTION
+e34c91ebdc6de30d50b1914adbf403ae *DESCRIPTION
 f35f4caf99cf51fa83543b3d9a9d49ec *NAMESPACE
 ab0d991e266be5be1016b48283f56b0f *R/autoprune.R
 8a5fa8678d9e74dc224d1821ae860aec *R/barplot.R
@@ -6,10 +6,10 @@ ab0d991e266be5be1016b48283f56b0f *R/autoprune.R
 1cdda21f91fd58cef74686b5ad402412 *R/df2dist.R
 e4c8196248ded4bf30412da3058f9e50 *R/growthcurve.R
 998980b8ee84099390b346622b07f55d *R/recplot.R
-c9c5c018a825c63c78fc701830601053 *R/recplot2.R
+d243207db206996be08941768650062d *R/recplot2.R
 1781c633067b381585d54d91e6ce97d3 *R/tribs.R
 6444c301c7c2e8fb28dd6043403768df *R/utils.R
-33607ba9b516385069563bbd58df1548 *README.md
+25eb731d0f5856adcc88cbef8d11eb3e *README.md
 706aa7f24959213f3130ad8f6a4a5cf9 *data/growth.curves.rda
 1eee9fc769a48cd3e1ba6cfd7c330856 *data/phyla.counts.rda
 4e462563c6d6342d662b2cd8323ae6b9 *man/enve.GrowthCurve-class.Rd
