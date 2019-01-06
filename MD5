@@ -1,15 +1,15 @@
-e34c91ebdc6de30d50b1914adbf403ae *DESCRIPTION
-f35f4caf99cf51fa83543b3d9a9d49ec *NAMESPACE
+e4d43b4209ced47a3244c7bcb1adb3e3 *DESCRIPTION
+a84c17be4303f52e99dec7fd90956c85 *NAMESPACE
 ab0d991e266be5be1016b48283f56b0f *R/autoprune.R
 8a5fa8678d9e74dc224d1821ae860aec *R/barplot.R
 688e0003ea72c60415191ee1d0f03ab8 *R/cliopts.R
 1cdda21f91fd58cef74686b5ad402412 *R/df2dist.R
 e4c8196248ded4bf30412da3058f9e50 *R/growthcurve.R
 998980b8ee84099390b346622b07f55d *R/recplot.R
-d243207db206996be08941768650062d *R/recplot2.R
+9dc1133f33d045c3aafe50d207aea17a *R/recplot2.R
 1781c633067b381585d54d91e6ce97d3 *R/tribs.R
 6444c301c7c2e8fb28dd6043403768df *R/utils.R
-25eb731d0f5856adcc88cbef8d11eb3e *README.md
+02d55259239e6216dff135175d9244d5 *README.md
 706aa7f24959213f3130ad8f6a4a5cf9 *data/growth.curves.rda
 1eee9fc769a48cd3e1ba6cfd7c330856 *data/phyla.counts.rda
 4e462563c6d6342d662b2cd8323ae6b9 *man/enve.GrowthCurve-class.Rd
@@ -36,6 +36,7 @@ e8ba00f6dbe1c06a60ab3c44f4edf38a *man/enve.recplot.Rd
 16fef3b1f22d010b9a43af0a93f687bd *man/enve.recplot2.__counts.Rd
 20ec84b0e253cd66ac1c1229f44208fd *man/enve.recplot2.__peakHist.Rd
 e71544da3f4d62ce76c87809c1827a8b *man/enve.recplot2.__whichClosestPeak.Rd
+a5726570a20f5f1393665867703cb8f2 *man/enve.recplot2.aucp.Rd
 e913d423b777ed379dbb27433b09468f *man/enve.recplot2.changeCutoff.Rd
 b34fd1cfee7ccc828b189144cd5d5161 *man/enve.recplot2.compareIdentities.Rd
 7d818de166232b2d6ff720b9e8d3cf48 *man/enve.recplot2.coordinates.Rd

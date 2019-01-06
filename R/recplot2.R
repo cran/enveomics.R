@@ -1022,6 +1022,20 @@ enve.recplot2.ANIr <- function
   return(sum(id*cnt/sum(cnt)))
 }
 
+enve.recplot2.aucp <- function
+  ### Estimate the Area Under the Core Peak (AUCP) from a recruitment plot
+  ### or the core peak. If a non-core peak is passed, it simply estimates the
+  ### area under that peak.
+    (x
+    ### `enve.RecPlot2` or `enve.RecPlot2.Peak` object.
+    ){
+  if(inherits(x, 'enve.RecPlot2'))
+    x <- enve.recplot2.corePeak(enve.recplot2.findPeaks(x))
+  if(!inherits(x, 'enve.RecPlot2.Peak'))
+    stop("'x' must inherit from class `enve.RecPlot2` or `enve.RecPlot2.Peak`")
+  return(x$n.hat / x$n.total)
+}
+
 #==============> Define internal functions
 enve.recplot2.__counts <- function
    ### Internal ancilliary function (see `enve.recplot2`).

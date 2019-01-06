@@ -37,6 +37,7 @@ And open help messages using any of the following commands:
 ?enve.recplot2.coordinates
 ?enve.recplot2.seqdepth
 ?enve.recplot2.ANIr
+?enve.recplot2.aucp
 ?enve.prune.dist
 ?enve.tribs
 ?enve.tribs.test
