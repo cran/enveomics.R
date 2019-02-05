@@ -643,7 +643,7 @@ enve.recplot2.findPeaks.mower <- function(
       ### Range of quantiles to be used in the estimation of a peak's
       ### parameters.
       mlv.opts=list(method='parzen'),
-      ### Options passed to `mlv` to estimate the mode.
+      ### Ignored. For backwards compatibility.
       fitdist.opts.sn=list(distr='sn', method='qme', probs=c(0.1,0.5,0.8),
 	 start=list(omega=1, alpha=-1), lower=c(0, -Inf, -Inf)),
       ### Options passed to `fitdist` to estimate the standard deviation if
@@ -1022,20 +1022,6 @@ enve.recplot2.ANIr <- function
   return(sum(id*cnt/sum(cnt)))
 }
 
-enve.recplot2.aucp <- function
-  ### Estimate the Area Under the Core Peak (AUCP) from a recruitment plot
-  ### or the core peak. If a non-core peak is passed, it simply estimates the
-  ### area under that peak.
-    (x
-    ### `enve.RecPlot2` or `enve.RecPlot2.Peak` object.
-    ){
-  if(inherits(x, 'enve.RecPlot2'))
-    x <- enve.recplot2.corePeak(enve.recplot2.findPeaks(x))
-  if(!inherits(x, 'enve.RecPlot2.Peak'))
-    stop("'x' must inherit from class `enve.RecPlot2` or `enve.RecPlot2.Peak`")
-  return(x$n.hat / x$n.total)
-}
-
 #==============> Define internal functions
 enve.recplot2.__counts <- function
    ### Internal ancilliary function (see `enve.recplot2`).
@@ -1124,7 +1110,7 @@ enve.recplot2.findPeaks.__mow_one <- function
    
    # Find peak
    o <- mlv.opts; o$x = lsd1;
-   mode1 <- do.call(mlv, o)$M;
+   mode1 <- median(lsd1); # mode1 <- do.call(mlv, o)$M;
    if(verbose) cat('Anchoring at mode =',mode1,'\n')
    param.hat <- fitdist.opts$start; last.hat <- param.hat;
    lim <- NA;
