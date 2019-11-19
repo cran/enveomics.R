@@ -1,4 +1,4 @@
-da8b4b0154fbd0b181f75751eeaf5ef1 *DESCRIPTION
+cd47b11480a1de437bc9fef018b1b10d *DESCRIPTION
 3d6be4ce36348aa0c8c31802ac4e6bf8 *NAMESPACE
 4b0a8547d030fa8648fd1b602f5a361f *R/autoprune.R
 3b0e4e88dc5098dc475ec7f505cbcd8a *R/barplot.R
@@ -6,10 +6,10 @@ da8b4b0154fbd0b181f75751eeaf5ef1 *DESCRIPTION
 0e33a7e8b72a2a49c6382b631cc278de *R/df2dist.R
 c202f6eeb5c382240c133873aa3ef685 *R/growthcurve.R
 1d443af2db17999ee50859bbc4f7da85 *R/recplot.R
-df93652f02d88c0f96440ce2950c06fa *R/recplot2.R
+39aed51eec65307eb658da363a6dbb99 *R/recplot2.R
 20e4787215fe660f1e55641209f98d2f *R/tribs.R
 1df913d0ae05eeadc27a5e735dd54495 *R/utils.R
-172ae7b0f4ee5ae6f9ee0d851022f8ff *README.md
+3809a11643aed7fd0969974327e5b7ba *README.md
 706aa7f24959213f3130ad8f6a4a5cf9 *data/growth.curves.rda
 1eee9fc769a48cd3e1ba6cfd7c330856 *data/phyla.counts.rda
 e6e3ea8ee2656525c1054cb03a5cadd8 *man/cash-enve.GrowthCurve-method.Rd
@@ -40,10 +40,10 @@ c992a5d116910cdcf045ca7b77828a48 *man/enve.recplot2.ANIr.Rd
 69c6629ec92373e7869781bd15818b0a *man/enve.recplot2.__peakHist.Rd
 4e4be7246f5c29926444062a0fb6c7e6 *man/enve.recplot2.__whichClosestPeak.Rd
 101a213bb3625fb3767a0d0aa765ce86 *man/enve.recplot2.changeCutoff.Rd
-a71fa3c3a7f5fe0023ed4e303a5b7581 *man/enve.recplot2.compareIdentities.Rd
-74b4f8ef582bda46ab07f5c20b9e5cb5 *man/enve.recplot2.coordinates.Rd
+4f576709933210f710fe600cd9ed710b *man/enve.recplot2.compareIdentities.Rd
+5571f5185eb282d67fcd8cce4c9afb60 *man/enve.recplot2.coordinates.Rd
 0bf14ac5898adf78c22724a0835a1ae3 *man/enve.recplot2.corePeak.Rd
-02f0ae70f5dfe4fc5315161aa7a426ad *man/enve.recplot2.extractWindows.Rd
+566d28659834dd97b4ed14f9da83b5e7 *man/enve.recplot2.extractWindows.Rd
 ded44fe58bb8836f47d449e189b31f00 *man/enve.recplot2.findPeaks.Rd
 f5ed032cb9393f07a83f5d24c890ce2d *man/enve.recplot2.findPeaks.__em_e.Rd
 d3910c5d273796bd35f9a73c028ce3f6 *man/enve.recplot2.findPeaks.__em_m.Rd
