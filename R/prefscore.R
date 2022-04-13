@@ -55,6 +55,7 @@ enve.prefscore <- function
   expected <- (rowSums(p_p[, set]) - rowSums(p_p[, !set])) / sum(p_p)
   observed <- (rowSums(x.u[, set]) - rowSums(x.u[, !set])) / sum(x.u)
   y <- observed / abs(expected)
+  names(y) <- rownames(x)[universe]
   y.code <- cut(y, c(-Inf, -signif.thr, signif.thr, Inf), 1:3)
 
   # Plot
