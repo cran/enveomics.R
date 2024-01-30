@@ -1,8 +1,8 @@
-613c3a89617e6191c344271677799668 *DESCRIPTION
+e69c696ee54275ee5462452d86826c52 *DESCRIPTION
 2e0745af7a0b036fbedfb5156f5d932e *NAMESPACE
 f4006d01630c833b01917f5c9389bd82 *R/autoprune.R
 47703a6f461ab87b17bae01600161f22 *R/barplot.R
-5a84bfc0adf97fe1a75a8a13e2d05ac3 *R/cliopts.R
+3f19ff849df5db204d9ceafe33337073 *R/cliopts.R
 c9b3f99e2c90593ba70ba3113aa9d221 *R/df2dist.R
 5f6d45b2bfb550bb6348a863e992d1bb *R/growthcurve.R
 2fbc204f9f24963d84cf1459fb13c7e7 *R/prefscore.R
@@ -54,7 +54,7 @@ ca2afaf632e375579e2fe1d7c38939dd *man/enve.recplot2.findPeaks.__mow_one.Rd
 d4c084383b182e5621f2e8242e1f2008 *man/enve.recplot2.findPeaks.__mower.Rd
 6664ecb48614c43dbf1876c0df583225 *man/enve.recplot2.findPeaks.em.Rd
 0572f664bc5610bcff638c624fff0484 *man/enve.recplot2.findPeaks.emauto.Rd
-6bcf79251b3ab99c4d26e85c24d9e29d *man/enve.recplot2.findPeaks.mower.Rd
+7e21f3f0268415eaa1371b2a7952ae1d *man/enve.recplot2.findPeaks.mower.Rd
 9f498c7868b08ba993bf399a89bad5c7 *man/enve.recplot2.seqdepth.Rd
 fc517ebf82a997e2efe659c293028907 *man/enve.recplot2.windowDepthThreshold.Rd
 f86668f6921df24a1d537e64f5db1e02 *man/enve.selvector.Rd
@@ -64,7 +64,7 @@ ca0257f82bdcca63a36e08b41cf24647 *man/enve.truncate.Rd
 151c3736532248b2b53928885f1f6bf5 *man/growth.curves.Rd
 2a6fb4d08edb0feb5d7a6ca7dbc34992 *man/phyla.counts.Rd
 d240d2071882c143e22ea1f86d2419e6 *man/plot.enve.GrowthCurve.Rd
-13f4e276893dd2ccd0c1d6355a1fee5d *man/plot.enve.RecPlot2.Rd
+8b3aaa3d2121ef0988a821a811b972dc *man/plot.enve.RecPlot2.Rd
 0051d8a3271cf56c7cae5e38726b1ad7 *man/plot.enve.TRIBS.Rd
 c796f9eeb4d38179434c3e5d4830bc12 *man/plot.enve.TRIBStest.Rd
 39f4b8a419874ba0ad98aff001df1e4c *man/summary.enve.GrowthCurve.Rd

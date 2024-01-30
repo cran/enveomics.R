@@ -1,5 +1,5 @@
 Package: enveomics.R
-Version: 1.9.0
+Version: 1.9.1
 Authors@R: c(person("Luis M.", "Rodriguez-R", role = c("aut", "cre"),
 	   email = "lmrodriguezr@gmail.com"))
 Title: Various Utilities for Microbial Genomics and Metagenomics
@@ -16,8 +16,8 @@ Suggests: tools, vegan, ape, picante, gplots, optparse
 License: Artistic-2.0
 LazyData: yes
 Encoding: UTF-8
-RoxygenNote: 7.1.2
+RoxygenNote: 7.3.1
 NeedsCompilation: no
-Packaged: 2022-04-12 01:57:47 UTC; miguel
+Packaged: 2024-01-30 21:52:19 UTC; miguel
 Repository: CRAN
-Date/Publication: 2022-04-13 10:12:29 UTC
+Date/Publication: 2024-01-30 22:10:17 UTC
